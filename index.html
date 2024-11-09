@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rey's Portfolio</title>
+    <link rel="shortcut icon" href="imgs/avatar_head.png" type="image/png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts.js"></script>
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <header>
+      <a class="logo-holder" href="#home">
+        <img
+          class="logo"
+          src="imgs/rey_port_logo.png"
+          alt="Rey's Portfolio Logo"
+        />
+      </a>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="#expertise">Expertise</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#works">Works</a>
+          </li>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+        </ul>
+
+        <a href="#" class="menu-toggle" onclick="toggleMenu();">
+          <i data-feather="menu"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i data-feather="chevron-up" class="icon"></i>
+      </button>
+      <!-- HOME SECTION -->
+      <section id="home" class="hero container">
+        <div class="avatar-holder">
+          <img src="imgs/avatar_head.png" alt="avatar_head" />
+          <h1>Hey, I'm Rey !</h1>
+        </div>
+
+        <div class="hero-texts">
+          <h3>
+            <span>Application Developer</span> with a passion for crafting
+            digital solutions.
+          </h3>
+          <p>Learn more about my skills, projects, and professional journey.</p>
+        </div>
+        <div class="buttons-vertical">
+          <a href="#about" class="button button-lg main-btn">Contact Me</a>
+          <a href="#expertise" class="sub-btn">Know More</a>
+        </div>
+      </section>
+
+      <!-- EXPERTISE SECTION -->
+      <section id="expertise" class="expertise container">
+        <div class="section-heading">
+          <div class="title-holder">
+            <div class="dash"></div>
+            <h3 class="section-title">Expertise</h3>
+          </div>
+
+          <p class="section-subtitle">
+            Developed through commitment and continuous learning.
+          </p>
+        </div>
+
+        <div class="section-content">
+          <div class="card">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 10.128C20 6.296 20 4.381 18.828 3.19C17.656 1.999 15.771 2 12 2H10C6.229 2 4.343 2 3.172 3.19C2.001 4.38 2 6.296 2 10.128C2 13.96 2 15.875 3.172 17.066C3.642 17.543 4.226 17.829 5 18"
+                stroke="#232323"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 17.5C22 15.625 22 14.688 21.523 14.03C21.3688 13.8178 21.1822 13.6312 20.97 13.477C20.312 13 19.375 13 17.5 13H12.5C10.625 13 9.688 13 9.03 13.477C8.8178 13.6312 8.63118 13.8178 8.477 14.03C8 14.689 8 15.626 8 17.5C8 19.374 8 20.312 8.477 20.97C8.63148 21.1823 8.81844 21.3689 9.031 21.523C9.688 22 10.625 22 12.5 22H17.5C19.375 22 20.312 22 20.97 21.523C21.1822 21.3688 21.3688 21.1822 21.523 20.97C22 20.312 22 19.375 22 17.5Z"
+                stroke="#232323"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.5 16L17.42 16.793C17.807 17.126 18 17.293 18 17.5C18 17.707 17.807 17.874 17.42 18.207L16.5 19M13.5 16L12.58 16.793C12.193 17.126 12 17.293 12 17.5C12 17.707 12.193 17.874 12.58 18.207L13.5 19M2.5 6H19.5"
+                stroke="#232323"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="card-texts">
+              <h4>Web Development</h4>
+              <p>
+                Crafting responsive, dynamic websites focused on functionality
+                and user experience, ensuring seamless performance across all
+                devices.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.5 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V5C4 4.46957 4.21071 3.96086 4.58579 3.58579C4.96086 3.21071 5.46957 3 6 3H14C14.5304 3 15.0391 3.21071 15.4142 3.58579C15.7893 3.96086 16 4.46957 16 5V13M18 21L20 19L18 17M15 17L13 19L15 21M9 4H11M10 17V17.01"
+                stroke="#232323"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="card-texts">
+              <h4>Mobile Development</h4>
+              <p>
+                Developing intuitive Android applications with a focus on
+                performance and user-friendly interfaces, tailored to provide a
+                smooth experience on a range of Android devices.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.5 9H21.5M13 13H17M13 17H15M7 6H7.009M11 6H11.009M9 9V21.5M2.5 12C2.5 7.522 2.5 5.282 3.891 3.891C5.282 2.5 7.521 2.5 12 2.5C16.478 2.5 18.718 2.5 20.109 3.891C21.5 5.282 21.5 7.521 21.5 12C21.5 16.478 21.5 18.718 20.109 20.109C18.718 21.5 16.479 21.5 12 21.5C7.522 21.5 5.282 21.5 3.891 20.109C2.5 18.718 2.5 16.479 2.5 12Z"
+                stroke="#232323"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="card-texts">
+              <h4>UI / Ux Design</h4>
+              <p>
+                Designing user-centered interfaces that enhance usability and
+                visual appeal, ensuring that each interaction feels natural and
+                engaging for users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SkillS SECTION -->
+      <section id="skills" class="skills container">
+        <div class="section-content">
+          <div class="card" id="skills" data-tab-content>
+            <div class="skills-group">
+              <div class="skill-container" data-filter="tools">
+                <p>Adaptability</p>
+              </div>
+
+              <div class="skill-container" data-filter="tools">
+                <p>Android Studio</p>
+              </div>
+
+              <div class="skill-container" data-filter="soft-skills">
+                <p>Attention to Detail</p>
+              </div>
+
+              <div class="skill-container" data-filter="frameworks">
+                <p>Bootstrap</p>
+              </div>
+
+              <div class="skill-container" data-filter="soft-skills">
+                <p>Collaboration</p>
+              </div>
+
+              <div class="skill-container" data-filter="soft-skills">
+                <p>Communication Skills</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>C#</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>C++</p>
+              </div>
+
+              <div class="skill-container" data-filter="frameworks">
+                <p>CodeIgnter</p>
+              </div>
+
+              <div class="skill-container" data-filter="soft-skills">
+                <p>Critical Thinking</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>CSS</p>
+              </div>
+
+              <div class="skill-container" data-filter="tools">
+                <p>Figma</p>
+              </div>
+
+              <div class="skill-container" data-filter="tools">
+                <p>Git</p>
+              </div>
+
+              <div class="skill-container" data-filter="tools">
+                <p>GitHub</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>HTML</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>Java</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>JavaScript</p>
+              </div>
+
+              <div class="skill-container" data-filter="frameworks">
+                <p>Laravel</p>
+              </div>
+
+              <div class="skill-container" data-filter="database">
+                <p>MySQL</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>PHP</p>
+              </div>
+
+              <div class="skill-container" data-filter="database">
+                <p>phpMyAdmin</p>
+              </div>
+
+              <div class="skill-container" data-filter="database">
+                <p>SQLite</p>
+              </div>
+
+              <div class="skill-container" data-filter="frameworks">
+                <p>Tailwind</p>
+              </div>
+
+              <div class="skill-container" data-filter="soft-skills">
+                <p>Time Management</p>
+              </div>
+
+              <div class="skill-container" data-filter="tools">
+                <p>WordPress</p>
+              </div>
+
+              <div class="skill-container" data-filter="prog-lang">
+                <p>XML</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-section">
+          <div class="section-heading">
+            <div class="title-holder">
+              <div class="dash"></div>
+              <h3 class="section-title">Skills</h3>
+            </div>
+
+            <p class="section-subtitle">
+              Developed through commitment and continuous learning.
+            </p>
+          </div>
+
+          <div class="badge-group">
+            <button class="badge active" data-filter="all">All</button>
+            <button class="badge" data-filter="prog-lang">
+              Programming Languange
+            </button>
+            <button class="badge" data-filter="frameworks">Frameworks</button>
+            <button class="badge" data-filter="database">Database</button>
+            <button class="badge" data-filter="tools">Tools</button>
+            <button class="badge" data-filter="soft-skills">Soft Skills</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="experience container">
+        <div class="section-content">
+          <div class="tab-holder">
+            <div class="section-heading">
+              <div class="title-holder">
+                <div class="dash"></div>
+                <h3 class="section-title">Experience</h3>
+              </div>
+
+              <p class="section-subtitle">
+                My career milestones and the contributions I've made along the
+                way.
+              </p>
+            </div>
+
+            <div class="exp-tabs">
+              <div class="exp-tab active" data-exp-tab="#mitacor">
+                <p class="position">Application Developer (Full-Stack)</p>
+                <p class="date">October 2023 - Present</p>
+              </div>
+
+              <div class="exp-tab" data-exp-tab="#sunlife">
+                <p class="position">Frontend Development Team Leader</p>
+                <p class="date">June 2022 - August 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-holder">
+            <div class="accordion active" id="mitacor" data-exp-content>
+              <div class="exp-title">
+                <h4>Application Developer</h4>
+                <p>MITACOR | Pasig City</p>
+              </div>
+
+              <div class="accordion-content open">
+                <div class="header">
+                  <span class="title"
+                    >Developed and managed diverse web systems.</span
+                  >
+                  <i data-feather="plus-circle" class="icon"></i>
+                </div>
+
+                <p class="description">
+                  spearheaded the design and implementation of key projects
+                  including a Human Resources Information System (HRIS),
+                  Enterprise Resource Planning (ERP) System, and Ticket
+                  Management System (TMS).
+                </p>
+              </div>
+
+              <div class="accordion-content">
+                <div class="header">
+                  <span class="title">Full-Stack Development Expertise.</span>
+                  <i data-feather="plus-circle" class="icon"></i>
+                </div>
+
+                <p class="description">
+                  managed both front-end and back-end development
+                  responsibilities. Led the creation, testing, and debugging of
+                  various web applications to enhance functionality and ensure
+                  user satisfaction.
+                </p>
+              </div>
+
+              <div class="accordion-content">
+                <div class="header">
+                  <span class="title">UI/UX Design and Documentation.</span>
+                  <i data-feather="plus-circle" class="icon"></i>
+                </div>
+
+                <p class="description">
+                  Created information architectures, flow diagrams, and UI/UX to
+                  streamline front-end development and support documentations
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion" id="sunlife" data-exp-content>
+              <div class="exp-title">
+                <h4>Frontend Development Team Leader</h4>
+                <p>Sun Life Philippines | College Online Internship</p>
+              </div>
+
+              <div class="accordion-content">
+                <div class="header">
+                  <span class="title"
+                    >Directed a team of Front-end Developers.</span
+                  >
+                  <i data-feather="plus-circle" class="icon"></i>
+                </div>
+
+                <p class="description">
+                  Guided a team in redesigning the sales team’s B2C website,
+                  which enhanced first-time user satisfaction scores by 60%.
+                </p>
+              </div>
+
+              <div class="accordion-content">
+                <div class="header">
+                  <span class="title"
+                    >Developed a comprehensive Design System.</span
+                  >
+                  <i data-feather="plus-circle" class="icon"></i>
+                </div>
+
+                <p class="description">
+                  Established a design system for the sales team, facilitating a
+                  smoother transition for the next developers.
+                </p>
+              </div>
+
+              <div class="accordion-content">
+                <div class="header">
+                  <span class="title">Revamped User Onboarding Process.</span>
+                  <i data-feather="plus-circle" class="icon"></i>
+                </div>
+
+                <p class="description">
+                  Designed and implemented a new onboarding process, increasing
+                  customer retention rates by 25%.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MY WORKS SECTION -->
+      <section id="works" class="works container">
+        <div class="section-heading centered">
+          <div class="title-holder">
+            <div class="dash"></div>
+            <h3 class="section-title">My Works</h3>
+            <div class="dash"></div>
+          </div>
+
+          <p class="section-subtitle">
+            Discover my completed and ongoing projects.
+          </p>
+        </div>
+
+        <div class="section-content">
+          <div class="project-card">
+            <div class="image-holder">
+              <a
+                href="https://www.esotechsolutions.com/"
+                class="elink-btn"
+                target="_blank"
+              >
+                <i data-feather="external-link" class="icon"></i>
+                Preview
+              </a>
+              <img
+                class="project-image"
+                src="imgs/ESOTECH Mockup.jpg"
+                alt="ESOTECH Solutions Mockup Image"
+              />
+            </div>
+
+            <div class="project-info">
+              <h4>ESOTECH Solutions</h4>
+              <p>
+                Daily Dose of Data (DDD) is a mobile app solution I developed as
+                a college project to help users avoid exceeding their data plan
+                limits and prevent unexpected charges. With DDD, users can track
+                their data usage, set custom alerts, and gain insights into
+                usage patterns—not just for their device but also for other
+                devices on the same data plan. DDD empowers users to stay within
+                their limits and say goodbye to extra fees.
+              </p>
+            </div>
+
+            <div class="project-tags">
+              <div class="tag">
+                <p>Web Development</p>
+              </div>
+              <div class="tag">
+                <p>WordPress</p>
+              </div>
+              <div class="tag">
+                <p>Service</p>
+              </div>
+              <div class="tag">
+                <p>Blog</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="image-holder">
+              <a
+                href="https://www.figma.com/proto/S4eyCEWBB08kzkQV55ASvI/UI-Projects?node-id=1-187&node-type=canvas&t=kpbdn0gcL4zQjN7J-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A187"
+                class="elink-btn"
+                target="_blank"
+              >
+                <i data-feather="external-link" class="icon"></i>
+                Preview
+              </a>
+              <img
+                class="project-image"
+                src="imgs/Daily Dose of Data Mockup.jpg"
+                alt="Daily Dose of Data Mockup Image"
+              />
+            </div>
+
+            <div class="project-info">
+              <h4>Daily Dose of Data</h4>
+              <p>
+                Daily Dose of Data (DDD) is a mobile app solution I developed as
+                a college project to help users avoid exceeding their data plan
+                limits and prevent unexpected charges. With DDD, users can track
+                their data usage, set custom alerts, and gain insights into
+                usage patterns—not just for their device but also for other
+                devices on the same data plan. DDD empowers users to stay within
+                their limits and say goodbye to extra fees.
+              </p>
+            </div>
+
+            <div class="project-tags">
+              <div class="tag">
+                <p>UI/ UX Design</p>
+              </div>
+              <div class="tag">
+                <p>Figma</p>
+              </div>
+              <div class="tag">
+                <p>Telecom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="image-holder">
+              <a
+                href="https://www.figma.com/proto/S4eyCEWBB08kzkQV55ASvI/UI-Projects?node-id=204-5326&node-type=canvas&t=kpbdn0gcL4zQjN7J-0&scaling=scale-down&content-scaling=fixed&page-id=202%3A213&starting-point-node-id=204%3A5326"
+                class="elink-btn"
+                target="_blank"
+              >
+                <i data-feather="external-link" class="icon"></i>
+                Preview
+              </a>
+              <img
+                class="project-image"
+                src="imgs/Formvla Mockup.jpg"
+                alt="Formvla Mockup Image"
+              />
+            </div>
+
+            <div class="project-info">
+              <h4>Formvla</h4>
+              <p>
+                Formvla is a mobile app we developed as our thesis project,
+                inspired by the shift to online learning during the pandemic.
+                With our background in Mathematics and Computer Science, we
+                created Formvla to offer a comprehensive collection of
+                mathematical formulas. Formvla’s Learn feature helps users
+                understand each formula through progressive learning, and its
+                Quizzes feature lets users apply and reinforce their learning.
+                Formvla helps users not just memorize, but truly understand
+                mathematical concepts.
+              </p>
+            </div>
+
+            <div class="project-tags">
+              <div class="tag">
+                <p>UI/ UX Design</p>
+              </div>
+              <div class="tag">
+                <p>Figma</p>
+              </div>
+              <div class="tag">
+                <p>Education</p>
+              </div>
+              <div class="tag">
+                <p>Android App</p>
+              </div>
+              <div class="tag">
+                <p>Android Studio</p>
+              </div>
+              <div class="tag">
+                <p>Java</p>
+              </div>
+              <div class="tag">
+                <p>SQLite</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="image-holder">
+              <a
+                href="https://www.figma.com/proto/S4eyCEWBB08kzkQV55ASvI/UI-Projects?node-id=208-10817&node-type=canvas&t=kpbdn0gcL4zQjN7J-0&scaling=scale-down-width&content-scaling=fixed&page-id=202%3A214&starting-point-node-id=208%3A10817&show-proto-sidebar=1"
+                class="elink-btn"
+                target="_blank"
+              >
+                <i data-feather="external-link" class="icon"></i>
+                Preview
+              </a>
+              <img
+                class="project-image"
+                src="imgs/Fintroso Mockup.jpg"
+                alt="Fintroso Image"
+              />
+            </div>
+
+            <div class="project-info">
+              <h4>Fintroso</h4>
+              <p>
+                This UI/UX design project is inspired by the widespread human
+                desire to surround ourselves with the beauty of art. That is the
+                design for the e-commerce mobile application for the poster
+                store where customers can find their perfect poster and even try
+                it on their own interior, this way adding the element of
+                personalization to the customer experience.
+              </p>
+            </div>
+
+            <div class="project-tags">
+              <div class="tag">
+                <p>UI/ UX Design</p>
+              </div>
+              <div class="tag">
+                <p>Figma</p>
+              </div>
+              <div class="tag">
+                <p>Finance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ME SECTION -->
+      <section id="about-me" class="about-me container">
+        <div class="section-heading centered">
+          <div class="title-holder">
+            <div class="dash"></div>
+            <h3 class="section-title">About Me</h3>
+            <div class="dash"></div>
+          </div>
+
+          <p class="section-subtitle">
+            Know more about me, my education, and hobbies.
+          </p>
+        </div>
+
+        <div class="content-holder">
+          <div class="img-holder">
+            <img src="imgs/avatar_body.png" alt="Rey's half body photo" />
+          </div>
+
+          <div class="section-content">
+            <div class="tabs">
+              <button data-tab-target="#about" class="tab-btn active">
+                About Me
+              </button>
+              <button data-tab-target="#education" class="tab-btn">
+                Education
+              </button>
+              <!-- <button data-tab-target="#skills" class="tab-btn">Skills</button> -->
+              <button data-tab-target="#hobbies" class="tab-btn">
+                Hobbies
+              </button>
+            </div>
+
+            <div class="tab-content">
+              <div class="card active" id="about" data-tab-content>
+                <h4>Hey, I'm Rey !</h4>
+                <p>
+                  Malesuada malesuada accumsan ad fames ligula vestibulum vitae
+                  magna mollis. Ligula augue elementum felis id efficitur duis
+                  morbi eu. Sociosqu maecenas neque pretium adipiscing mi
+                  accumsan in. Odio class inceptos et nostra finibus. Nam nisi
+                  erat tempor lacinia habitant nisl et.
+                </p>
+              </div>
+
+              <div class="card" id="education" data-tab-content>
+                <h4>Education</h4>
+
+                <div class="card-content">
+                  <h5>BS Mathematics Major in Computer Science</h5>
+                  <p>Bulacan State University</p>
+                  <p>2019 - 2023</p>
+                </div>
+
+                <div class="card-content">
+                  <h5>
+                    Science, Technology, Engineering, and Mathematics (STEM)
+                  </h5>
+                  <p>Jesus Is Lord Colleges Foundation</p>
+                  <p>2017 - 2019</p>
+                </div>
+              </div>
+
+              <div class="card" id="hobbies" data-tab-content>
+                <h4>Hobbies</h4>
+                <p>
+                  Malesuada malesuada accumsan ad fames ligula vestibulum vitae
+                  magna mollis. Ligula augue elementum felis id efficitur duis
+                  morbi eu. Sociosqu maecenas neque pretium adipiscing mi
+                  accumsan in. Odio class inceptos et nostra finibus. Nam nisi
+                  erat tempor lacinia habitant nisl et.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <button class="button button-lg">Download CV</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
