@@ -106,6 +106,7 @@ header {
           padding: 8px 16px;
           color: var(--black-800);
           position: relative;
+          font-size: var(--fs-1);
           text-decoration: none;
           transition: color 0.3s ease;
 
@@ -192,12 +193,46 @@ header {
 /* HERO SECTION */
 /* ================= */
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 1rem;
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 120px;
 
   img {
@@ -205,10 +240,14 @@ header {
     background-color: var(--gray-100);
     border-radius: 50%;
     width: 5rem;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.5s 1 normal forwards;
   }
 
   h1 {
     font-weight: var(--fw-2);
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.7s 1 normal forwards;
   }
 
   .hero-texts {
@@ -217,6 +256,8 @@ header {
     flex-direction: column;
     margin: 0 auto;
     margin-bottom: 1rem;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.9s 1 normal forwards;
 
     h3 {
       font-size: var(--fs-6);
@@ -234,8 +275,89 @@ header {
     }
   }
 
+  .contacts {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 12px;
+
+    .contact-card {
+      display: flex;
+      padding: 12px;
+      align-items: center;
+      gap: 8px;
+      outline: 2px solid var(--gray-100);
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      opacity: 0;
+
+      &:nth-child(1) {
+        animation: fade-up 0.5s ease 1.5s 1 normal forwards;
+      }
+      &:nth-child(2) {
+        animation: fade-up 0.5s ease 2s 1 normal forwards;
+      }
+      &:nth-child(3) {
+        animation: fade-up 0.5s ease 2.5s 1 normal forwards;
+      }
+
+      .icon-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 44px;
+        background-color: var(--gray-100);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        .icon {
+          color: var(--black-100);
+          transition: all 0.3s ease;
+        }
+      }
+
+      .contact-texts {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+
+        span {
+          font-size: var(--fs-1);
+          font-weight: var(--fw-3);
+        }
+      }
+
+      &:hover {
+        outline-color: var(--primary-100);
+        transform: translateY(-10px) !important;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+        .icon-bg {
+          background-color: var(--primary-100);
+
+          .icon {
+            stroke: var(--white-200);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 660px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      .contact-card {
+        width: fit-content;
+      }
+    }
+  }
+
   .main-btn {
     text-decoration: none;
+    opacity: 0;
+    animation: fade-in 1s ease 2.5s 1 normal forwards;
   }
 
   .sub-btn {
@@ -434,9 +556,13 @@ a {
       flex-direction: column;
     }
 
-    .card {
+    .card-container {
       display: flex;
       flex: 1;
+    }
+
+    .card {
+      display: flex;
       flex-direction: column;
       background-color: var(--white-200);
       gap: 12px;

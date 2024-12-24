@@ -18,7 +18,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- CSS & JS -->
     <link rel="stylesheet" href="./style.css" />
@@ -81,15 +87,52 @@
           </h3>
           <p>Learn more about my skills, projects, and professional journey.</p>
         </div>
+
+        <div class="contacts">
+          <div class="contact-card">
+            <div class="icon-bg">
+              <i data-feather="mail" class="icon"></i>
+            </div>
+
+            <div class="contact-texts">
+              <span>Email</span>
+              <p>dev.reyyy@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="icon-bg">
+              <i data-feather="message-circle" class="icon"></i>
+            </div>
+
+            <div class="contact-texts">
+              <span>Mobile No.</span>
+              <p>+63 927 546 0407</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="icon-bg">
+              <i data-feather="github" class="icon"></i>
+            </div>
+
+            <div class="contact-texts">
+              <span>GitHub</span>
+              <p>dev-reyyy</p>
+            </div>
+          </div>
+        </div>
+
         <div class="buttons-vertical">
-          <a href="#about" class="button button-lg main-btn">Contact Me</a>
-          <a href="#expertise" class="sub-btn">Know More</a>
+          <a href="#expertise" class="button button-lg main-btn">Know More</a>
+          <!-- <a href="#about" class="button button-lg main-btn">Contact Me</a>
+          <a href="#expertise" class="sub-btn">Know More</a> -->
         </div>
       </section>
 
       <!-- EXPERTISE SECTION -->
       <section id="expertise" class="expertise container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="fade-right">
           <div class="title-holder">
             <div class="dash"></div>
             <h3 class="section-title">Expertise</h3>
@@ -101,96 +144,116 @@
         </div>
 
         <div class="section-content">
-          <div class="card">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 10.128C20 6.296 20 4.381 18.828 3.19C17.656 1.999 15.771 2 12 2H10C6.229 2 4.343 2 3.172 3.19C2.001 4.38 2 6.296 2 10.128C2 13.96 2 15.875 3.172 17.066C3.642 17.543 4.226 17.829 5 18"
-                stroke="#232323"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22 17.5C22 15.625 22 14.688 21.523 14.03C21.3688 13.8178 21.1822 13.6312 20.97 13.477C20.312 13 19.375 13 17.5 13H12.5C10.625 13 9.688 13 9.03 13.477C8.8178 13.6312 8.63118 13.8178 8.477 14.03C8 14.689 8 15.626 8 17.5C8 19.374 8 20.312 8.477 20.97C8.63148 21.1823 8.81844 21.3689 9.031 21.523C9.688 22 10.625 22 12.5 22H17.5C19.375 22 20.312 22 20.97 21.523C21.1822 21.3688 21.3688 21.1822 21.523 20.97C22 20.312 22 19.375 22 17.5Z"
-                stroke="#232323"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16.5 16L17.42 16.793C17.807 17.126 18 17.293 18 17.5C18 17.707 17.807 17.874 17.42 18.207L16.5 19M13.5 16L12.58 16.793C12.193 17.126 12 17.293 12 17.5C12 17.707 12.193 17.874 12.58 18.207L13.5 19M2.5 6H19.5"
-                stroke="#232323"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <div
+            class="card-container"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="card">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 10.128C20 6.296 20 4.381 18.828 3.19C17.656 1.999 15.771 2 12 2H10C6.229 2 4.343 2 3.172 3.19C2.001 4.38 2 6.296 2 10.128C2 13.96 2 15.875 3.172 17.066C3.642 17.543 4.226 17.829 5 18"
+                  stroke="#232323"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 17.5C22 15.625 22 14.688 21.523 14.03C21.3688 13.8178 21.1822 13.6312 20.97 13.477C20.312 13 19.375 13 17.5 13H12.5C10.625 13 9.688 13 9.03 13.477C8.8178 13.6312 8.63118 13.8178 8.477 14.03C8 14.689 8 15.626 8 17.5C8 19.374 8 20.312 8.477 20.97C8.63148 21.1823 8.81844 21.3689 9.031 21.523C9.688 22 10.625 22 12.5 22H17.5C19.375 22 20.312 22 20.97 21.523C21.1822 21.3688 21.3688 21.1822 21.523 20.97C22 20.312 22 19.375 22 17.5Z"
+                  stroke="#232323"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.5 16L17.42 16.793C17.807 17.126 18 17.293 18 17.5C18 17.707 17.807 17.874 17.42 18.207L16.5 19M13.5 16L12.58 16.793C12.193 17.126 12 17.293 12 17.5C12 17.707 12.193 17.874 12.58 18.207L13.5 19M2.5 6H19.5"
+                  stroke="#232323"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
-            <div class="card-texts">
-              <h4>Web Development</h4>
-              <p>
-                Crafting responsive, dynamic websites focused on functionality
-                and user experience, ensuring seamless performance across all
-                devices.
-              </p>
+              <div class="card-texts">
+                <h4>Web Development</h4>
+                <p>
+                  Crafting responsive, dynamic websites focused on functionality
+                  and user experience, ensuring seamless performance across all
+                  devices.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.5 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V5C4 4.46957 4.21071 3.96086 4.58579 3.58579C4.96086 3.21071 5.46957 3 6 3H14C14.5304 3 15.0391 3.21071 15.4142 3.58579C15.7893 3.96086 16 4.46957 16 5V13M18 21L20 19L18 17M15 17L13 19L15 21M9 4H11M10 17V17.01"
-                stroke="#232323"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <div
+            class="card-container"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="400"
+          >
+            <div class="card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.5 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V5C4 4.46957 4.21071 3.96086 4.58579 3.58579C4.96086 3.21071 5.46957 3 6 3H14C14.5304 3 15.0391 3.21071 15.4142 3.58579C15.7893 3.96086 16 4.46957 16 5V13M18 21L20 19L18 17M15 17L13 19L15 21M9 4H11M10 17V17.01"
+                  stroke="#232323"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
-            <div class="card-texts">
-              <h4>Mobile Development</h4>
-              <p>
-                Developing intuitive Android applications with a focus on
-                performance and user-friendly interfaces, tailored to provide a
-                smooth experience on a range of Android devices.
-              </p>
+              <div class="card-texts">
+                <h4>Mobile Development</h4>
+                <p>
+                  Developing intuitive Android applications with a focus on
+                  performance and user-friendly interfaces, tailored to provide
+                  a smooth experience on a range of Android devices.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2.5 9H21.5M13 13H17M13 17H15M7 6H7.009M11 6H11.009M9 9V21.5M2.5 12C2.5 7.522 2.5 5.282 3.891 3.891C5.282 2.5 7.521 2.5 12 2.5C16.478 2.5 18.718 2.5 20.109 3.891C21.5 5.282 21.5 7.521 21.5 12C21.5 16.478 21.5 18.718 20.109 20.109C18.718 21.5 16.479 21.5 12 21.5C7.522 21.5 5.282 21.5 3.891 20.109C2.5 18.718 2.5 16.479 2.5 12Z"
-                stroke="#232323"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <div
+            class="card-container"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="800"
+          >
+            <div class="card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.5 9H21.5M13 13H17M13 17H15M7 6H7.009M11 6H11.009M9 9V21.5M2.5 12C2.5 7.522 2.5 5.282 3.891 3.891C5.282 2.5 7.521 2.5 12 2.5C16.478 2.5 18.718 2.5 20.109 3.891C21.5 5.282 21.5 7.521 21.5 12C21.5 16.478 21.5 18.718 20.109 20.109C18.718 21.5 16.479 21.5 12 21.5C7.522 21.5 5.282 21.5 3.891 20.109C2.5 18.718 2.5 16.479 2.5 12Z"
+                  stroke="#232323"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
-            <div class="card-texts">
-              <h4>UI / Ux Design</h4>
-              <p>
-                Designing user-centered interfaces that enhance usability and
-                visual appeal, ensuring that each interaction feels natural and
-                engaging for users.
-              </p>
+              <div class="card-texts">
+                <h4>UI / Ux Design</h4>
+                <p>
+                  Designing user-centered interfaces that enhance usability and
+                  visual appeal, ensuring that each interaction feels natural
+                  and engaging for users.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -198,7 +261,7 @@
 
       <!-- SkillS SECTION -->
       <section id="skills" class="skills container">
-        <div class="section-content">
+        <div class="section-content" data-aos="fade-right">
           <div class="card" id="skills" data-tab-content>
             <div class="skills-group">
               <div class="skill-container" data-filter="tools">
@@ -309,7 +372,7 @@
         </div>
 
         <div class="left-section">
-          <div class="section-heading">
+          <div class="section-heading" data-aos="fade-up">
             <div class="title-holder">
               <div class="dash"></div>
               <h3 class="section-title">Skills</h3>
@@ -320,7 +383,7 @@
             </p>
           </div>
 
-          <div class="badge-group">
+          <div class="badge-group" data-aos="fade-up">
             <button class="badge active" data-filter="all">All</button>
             <button class="badge" data-filter="prog-lang">
               Programming Languange
@@ -336,7 +399,7 @@
       <!-- EXPERIENCE SECTION -->
       <section id="experience" class="experience container">
         <div class="section-content">
-          <div class="tab-holder">
+          <div class="tab-holder" data-aos="fade-right">
             <div class="section-heading">
               <div class="title-holder">
                 <div class="dash"></div>
@@ -356,13 +419,13 @@
               </div>
 
               <div class="exp-tab" data-exp-tab="#sunlife">
-                <p class="position">Frontend Development Team Leader</p>
+                <p class="position">Frontend Development Team Lead</p>
                 <p class="date">June 2022 - August 2022</p>
               </div>
             </div>
           </div>
 
-          <div class="accordion-holder">
+          <div class="accordion-holder" data-aos="fade-left">
             <div class="accordion active" id="mitacor" data-exp-content>
               <div class="exp-title">
                 <h4>Application Developer</h4>
@@ -464,7 +527,7 @@
 
       <!-- MY WORKS SECTION -->
       <section id="works" class="works container">
-        <div class="section-heading centered">
+        <div class="section-heading centered" data-aos="fade-up">
           <div class="title-holder">
             <div class="dash"></div>
             <h3 class="section-title">My Works</h3>
@@ -477,7 +540,7 @@
         </div>
 
         <div class="section-content">
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up">
             <div class="image-holder">
               <a
                 href="https://www.esotechsolutions.com/"
@@ -497,13 +560,14 @@
             <div class="project-info">
               <h4>ESOTECH Solutions</h4>
               <p>
-                Daily Dose of Data (DDD) is a mobile app solution I developed as
-                a college project to help users avoid exceeding their data plan
-                limits and prevent unexpected charges. With DDD, users can track
-                their data usage, set custom alerts, and gain insights into
-                usage patterns—not just for their device but also for other
-                devices on the same data plan. DDD empowers users to stay within
-                their limits and say goodbye to extra fees.
+                The ESOTECH website is a project I worked on during my time at
+                my previous company. Built using WordPress, plugins, and custom
+                code snippets, the site showcases the client’s business,
+                services, and projects. It also features a blog page where
+                visitors can explore posts created by the client. To streamline
+                content management, I implemented a front-end interface for
+                creating projects and blog posts, enabling the client to easily
+                add and update content.
               </p>
             </div>
 
@@ -523,7 +587,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up">
             <div class="image-holder">
               <a
                 href="https://www.figma.com/proto/S4eyCEWBB08kzkQV55ASvI/UI-Projects?node-id=1-187&node-type=canvas&t=kpbdn0gcL4zQjN7J-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A187"
@@ -566,7 +630,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up">
             <div class="image-holder">
               <a
                 href="https://www.figma.com/proto/S4eyCEWBB08kzkQV55ASvI/UI-Projects?node-id=204-5326&node-type=canvas&t=kpbdn0gcL4zQjN7J-0&scaling=scale-down&content-scaling=fixed&page-id=202%3A213&starting-point-node-id=204%3A5326"
@@ -623,7 +687,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-up">
             <div class="image-holder">
               <a
                 href="https://www.figma.com/proto/S4eyCEWBB08kzkQV55ASvI/UI-Projects?node-id=208-10817&node-type=canvas&t=kpbdn0gcL4zQjN7J-0&scaling=scale-down-width&content-scaling=fixed&page-id=202%3A214&starting-point-node-id=208%3A10817&show-proto-sidebar=1"
@@ -669,7 +733,7 @@
 
       <!-- ABOUT ME SECTION -->
       <section id="about-me" class="about-me container">
-        <div class="section-heading centered">
+        <div class="section-heading centered" data-aos="fade-up">
           <div class="title-holder">
             <div class="dash"></div>
             <h3 class="section-title">About Me</h3>
@@ -682,12 +746,12 @@
         </div>
 
         <div class="content-holder">
-          <div class="img-holder">
+          <div class="img-holder" data-aos="fade-right">
             <img src="imgs/avatar_body.png" alt="Rey's half body photo" />
           </div>
 
           <div class="section-content">
-            <div class="tabs">
+            <div class="tabs" data-aos="fade-left">
               <button data-tab-target="#about" class="tab-btn active">
                 About Me
               </button>
@@ -700,7 +764,7 @@
               </button>
             </div>
 
-            <div class="tab-content">
+            <div class="tab-content" data-aos="fade-left">
               <div class="card active" id="about" data-tab-content>
                 <h4>Hey, I'm Rey !</h4>
                 <p>
@@ -743,7 +807,13 @@
             </div>
 
             <div>
-              <button class="button button-lg">Download CV</button>
+              <button
+                class="button button-lg"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
+                Download CV
+              </button>
             </div>
           </div>
         </div>
